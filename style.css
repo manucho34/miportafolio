@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+.link {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.link:hover {
+    font-weight: bold;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+
+.cabecera__titulo {
+    gap: 1rem;
+}
+
+.cabecera__menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    font-size: 20px ;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*CONTENEDOR*/
+
+
+
+.descripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 82%;
+    padding: 0 9%;
+    margin-top: 2rem;
+}
+
+.descripcion__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60vw;
+    margin: 7rem 0;
+}
+
+.descripcion__titulo {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.descripcion__descripcion {
+    font-size: 22px;
+}
+
+.descripcion__links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.imagen__boca {
+    border-radius: 100%;
+    width: 350px;
+    margin-left: 1rem;
+}
+
+/*SOBREMI*/
+
+.sobreMiyskills {
+    background-color: #222222;
+    color: white;
+}
+
+.sobreMi__todo {
+    
+    color: white;
+    
+}
+
+.sobreMi {
+    
+    margin-top: 2rem;
+    padding: 5% 7.5%;
+    width: 85%;
+}
+
+.sobreMi__titulo {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.sobreMi__descripcion {
+    font-size: 18px;
+}
+
+/* SKILLS */
+
+.skills__container {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around; 
+    
+}
+
+.skills__titulo {
+    font-size: 52px;
+    font-weight: 700;
+    display: block;
+    padding: 2rem 0;
+    margin-top: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.logoskills {
+    width: 80px;
+    background-color: lightgrey;
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+/*HOBBIES*/
+
+.hobbies__container {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around; 
+    
+}
+
+.hobbies__titulo {
+    font-size: 52px;
+    font-weight: 700;
+    display: block;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.hobbies__logos {
+    width: 80px;
+    background-color: lightgrey;
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+.cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+/*CONTENEDOR*/
+
+.descripcion {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.descripcion__titulo {
+    font-size: 30px;
+}
+
+.descripcion__links {
+    justify-content: center;
+}
+
+.imagen__boca {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion__contenedor {
+    margin-top: 5rem;
+}
+
+/*SOBRE MI */
+
+.sobreMi {
+    justify-content: center;
+    text-align: center;
+}
+
+.sobreMi__titulo {
+    font-size: 40px;
+}
+
+.sobreMi__descripcion {
+    font-size: 20px;
+}
+
+/*SKILLS*/
+
+.skills__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoskills {
+    margin-bottom: 2rem;
+}
+
+/*HOBBIES*/
+
+.hobbies__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbies__logos {
+    margin-bottom: 2rem;
+}
+
+
+}
